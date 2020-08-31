@@ -24,12 +24,13 @@ body {
 }
 
 .app__cart {
-  width: 30%;
-  padding: 20px;
+  width: 38%;
+  padding: 40px;
   background-color: #ebebeb;
   min-height: 200px;
   margin-bottom: 20px;
-  margin-top: 56px;
+  margin-top: 0;
+  box-sizing: border-box;
 }
 
 .goods__title {
@@ -76,6 +77,8 @@ body {
 
 .goods-item__description {
   margin: 0 0 10px;
+  font-size: 12px;
+  line-height: 1.5;
 }
 
 .goods-item__add-to-card {
@@ -98,4 +101,49 @@ body {
   background-color: #1a73e8;
   color: #fff;
   transition: all 0.1s linear;
+}
+
+.cart__title {
+  margin: 0 0 20px;
+}
+
+.cart__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.cart__list-item {
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.cart__note {
+  margin: 0 0 10px;
+  font-size: 12px;
+}
+
+.cart__total {
+  border-top: 2px solid #000;
+  font-weight: 600;
+  margin: 0;
+  padding: 10px 0 0;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0;
+}
+
+.cart-item__title {
+  margin: 0;
+  width: 60%;
+  font-size: 12px;
+}
+
+.cart-item__price {
+  margin: 0;
+  font-size: 14px;
 }
