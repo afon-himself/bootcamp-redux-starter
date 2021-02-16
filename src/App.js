@@ -12,11 +12,11 @@ class App extends Component {
         <header className="app__header">
           <Header />
         </header>
-        <main class="app__main">
-          <div class="app__goods">
+        <main className="app__main">
+          <div className="app__goods">
             <Goods />
           </div>
-          <div class="app__cart">
+          <div className="app__cart">
             <Cart />
           </div>
         </main>

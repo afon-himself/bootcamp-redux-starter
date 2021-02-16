@@ -31,8 +31,8 @@ class Goods extends Component {
       <div className="goods">
         <h2 className="goods__title">Video Games</h2>
         {this.state.goods.map(item => (
-          <ul className="goods__list">
-            <li className="goods__list-item" key={item.id}>
+          <ul className="goods__list" key={item.id}>
+            <li className="goods__list-item">
               <GoodsItem {...item} />
             </li>
           </ul>
