@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React, { PureComponent } from "react";
 import "../styles.css";
 
 
-class GoodsItem extends Component {
+class GoodsItem extends PureComponent {
   render() {
     const { title, description, price, id } = this.props;
 

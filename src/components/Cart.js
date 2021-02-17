@@ -1,9 +1,9 @@
-import React, { Component } from "react";
+import React, { PureComponent } from "react";
 import "../styles.css";
 
 import CartItem from './CartItem';
 
-class Cart extends Component {
+class Cart extends PureComponent {
   state = {
     cartGoods: []
   }
@@ -17,8 +17,8 @@ class Cart extends Component {
         <h2 className="cart__title" >Shopping Cart</h2>
         { this.state.cartGoods.length ?
           <ul className="cart__list">
-            {this.state.cartGoods.map((item) => (
-              <li className="cart__list-item" key={item.id}>
+            {this.state.cartGoods.map((item, index) => (
+              <li className="cart__list-item" key={index}>
                 <CartItem {...item} />
               </li>
             ))}
@@ -26,7 +26,7 @@ class Cart extends Component {
         :
           <p className="cart__note">Nothing in the cart now</p>
         }
-        
+
         <p className="cart__total">Total: {this.getTotal()}.00$</p>
       </div>
     );

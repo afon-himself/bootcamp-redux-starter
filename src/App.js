@@ -1,11 +1,11 @@
-import React, { Component } from "react";
+import React, { PureComponent } from "react";
 import "./styles.css";
 
 import Header from './components/Header';
 import Goods from './components/Goods';
 import Cart from './components/Cart';
 
-class App extends Component {
+class App extends PureComponent {
   render() {
     return (
       <div className="app">
